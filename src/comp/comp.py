@@ -63,15 +63,15 @@ print(f)
 # list, except with all the names uppercase and the ages with 5 added to them.
 # The "humans" list should be unmodified.
 print("All names uppercase:")
-g = [x.name.upper() for x in humans]
+g = [Human(x.name.upper(), x.age + 5) for x in humans]
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 import math
-h = [x.age for x in humans]
+h = [math.sqrt(x.age) for x in humans]
 print(h)
-total = sum(h)
-print(sum(h))
-print(math.sqrt(total))
+# total = sum(h)
+# print(sum(h))
+# print(math.sqrt(total))
 
